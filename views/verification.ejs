@@ -1,0 +1,28 @@
+<% if (locals.msg) {%>
+    <% if (msg === "success") { %>
+        <div class="alert alert-success alert-dismissible fade show" role="alert">
+            Added Succesfully.
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+    <% } else if (msg === "fail") { %>
+        <div class="alert alert-danger alert-dismissible fade show" role="alert">
+            Username exists!
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+    <% } else if (msg === "invalid") { %>
+        <div class="alert alert-danger alert-dismissible fade show" role="alert">
+            Invalid username or password!
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+    <% } else if (msg === "returned") { %>
+        <div class="alert alert-success alert-dismissible fade show" role="alert">
+            Returned
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+    <% } else if (msg === "alerted") { %>
+        <div class="alert alert-success alert-dismissible fade show" role="alert">
+            Alerted
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+    <% }%>
+<% }%>

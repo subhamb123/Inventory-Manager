@@ -1,1 +1,1 @@
-# Inventory-Manager
+Run "node server.js" in the terminal.
